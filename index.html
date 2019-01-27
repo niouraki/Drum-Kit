@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <meta name="description" content="MY JavaScript Drum Kit for JavaScript 30 course">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="sounds">
+    <div data-key="65" class="sound clap" onclick="document.getElementById('clap').currentTime=0; document.getElementById('clap').play();">
+      <kbd>A</kbd>
+      <span>CLAP</span>
+    </div>
+    <div data-key="83" class="sound" onclick="document.getElementById('hihat').currentTime=0; document.getElementById('hihat').play();">
+      <kbd>S</kbd>
+      <span>HIHAT</span>
+    </div>
+    <div data-key="68" class="sound" onclick="document.getElementById('kick').currentTime=0; document.getElementById('kick').play();">
+      <kbd>D</kbd>
+      <span>KICK</span>
+    </div>
+    <div data-key="70" class="sound" onclick="document.getElementById('openhat').currentTime=0; document.getElementById('openhat').play();">
+      <kbd>F</kbd>
+      <span>OPENHAT</span>
+    </div>
+    <div data-key="71" class="sound" onclick="document.getElementById('boom').currentTime=0; document.getElementById('boom').play();">
+      <kbd>G</kbd>
+      <span>BOOM</span>
+    </div>
+    <div data-key="72" class="sound" onclick="document.getElementById('ride').currentTime=0; document.getElementById('ride').play();">
+      <kbd>H</kbd>
+      <span>RIDE</span>
+    </div>
+    <div data-key="74" class="sound" onclick="document.getElementById('snare').currentTime=0; document.getElementById('snare').play();">
+      <kbd>J</kbd>
+      <span>SNARE</span>
+    </div>
+    <div data-key="75" class="sound" onclick="document.getElementById('tom').currentTime=0; document.getElementById('tom').play();">
+      <kbd>K</kbd>
+      <span>TOM</span>
+    </div>
+    <div data-key="76" class="sound" onclick="document.getElementById('tink').currentTime=0; document.getElementById('tink').play();">
+      <kbd>L</kbd>
+      <span>TINK</span>
+    </div>
+    <audio data-key="65" src="sounds/clap.wav" type="audio/wav" id="clap"></audio>
+    <audio data-key="83" src="sounds/hihat.wav" type="audio/wav" id="hihat"></audio>
+    <audio data-key="68" src="sounds/kick.wav" type="audio/wav" id="kick"></audio>
+    <audio data-key="70" src="sounds/openhat.wav" type="audio/wav" id="openhat"></audio>
+    <audio data-key="71" src="sounds/boom.wav" type="audio/wav" id="boom"></audio>
+    <audio data-key="72" src="sounds/ride.wav" type="audio/wav" id="ride"></audio>
+    <audio data-key="74" src="sounds/snare.wav" type="audio/wav" id="snare"></audio>
+    <audio data-key="75" src="sounds/tom.wav" type="audio/wav"  id="tom"></audio>
+    <audio data-key="76" src="sounds/tink.wav" type="audio/wav" id="tink"></audio>
+  </div>
+  <script src="js/app.js"></script>
+</body>
